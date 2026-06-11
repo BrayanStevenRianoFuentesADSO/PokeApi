@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokedex</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <main class="container">
+
+        <h1>Pokedex</h1>
+        <p>Busca tu pokemon</p>
+
+        <section class="grid">
+
+            <div class="card">
+                <h2>Buscar Pokémon</h2>
+
+                <label>Nombre o número</label>
+                <input
+                    type="text"
+                    id="nombrePokemon"
+                    placeholder="Ej: pikachu o 25"
+                >
+
+                <button onclick="listarPokemon()">
+                    Buscar Pokémon
+                </button>
+            </div>
+
+            <div class="card">
+                <h2>Lista de Tipos</h2>
+
+                <button onclick="listarTipos()">
+                    Mostrar Tipos
+                </button>
+            </div>
+
+            <div class="card">
+                <h2>Buscar Tipo</h2>
+
+                <label>Nombre del tipo</label>
+                <input
+                    type="text"
+                    id="nombreTipo"
+                    placeholder="Ej: electric"
+                >
+
+                <button onclick="listarTipo()">
+                    Buscar Tipo
+                </button>
+            </div>
+
+        </section>
+
+        <div class="resultados-grid">
+
+            <section class="card">
+                <h2>Resultado Pokemon</h2>
+
+                <div id="resultadoPokemon" class="resultado">
+                    información del Pokémon
+                </div>
+            </section>
+
+            <section class="card">
+                <h2>Resultado Tipo</h2>
+
+                <div id="resultadoTipo" class="resultado">
+                    información del tipo
+                </div>
+            </section>
+
+            <section class="card">
+                <h2>Lista de Tipos</h2>
+
+                <div id="listaTipos" class="resultado">
+                    tipos
+                </div>
+            </section>
+
+        </div>
+
+    </main>
+
+    <script src="main.js"></script>
+
+</body>
+</html>
